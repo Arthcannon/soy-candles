@@ -26,6 +26,7 @@ Paragraph default: 1.6
 - Primary #d63355
 - Tints 
 #f7d6dd
+#fbebee
 - Shades 
 #c12e4d
 - Accents
@@ -157,7 +158,6 @@ body {
   border: none;
   cursor: pointer;
 
-  /* transition: background-color 0.3s; */
   transition: all 0.3s;
 }
 
@@ -180,13 +180,13 @@ body {
 
 .btn--outline:hover,
 .btn--outline:active {
-  background-color: #fdf2e9;
+  background-color: #fbebee;
   box-shadow: inset 0 0 0 3px #fff;
 }
 
 .btn--form {
-  background-color: #45260a;
-  color: #fdf2e9;
+  background-color: #d63355;
+  color: #fbebee;
   align-self: end;
   padding: 1.2rem;
 }
@@ -235,9 +235,7 @@ body {
 
 *:focus {
   outline: none;
-  /* outline: 4px dotted #d63355;
-  outline-offset: 8px; */
-  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+  box-shadow: 0 0 0 0.8rem rgba(214, 51, 85, 0.5);
 }
 
 /* SETTINGS CLASSES */

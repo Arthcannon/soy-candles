@@ -44,17 +44,26 @@
   color: #c12e4d;
 }
 
-.main-nav-link.nav-cta:link,
-.main-nav-link.nav-cta:visited {
+.main-nav-link.nav-login:link,
+.main-nav-link.nav-login:visited {
   padding: 1.2rem 2.4rem;
   border-radius: 9px;
   color: #fff;
   background-color: #d63355;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
 }
 
-.main-nav-link.nav-cta:hover,
-.main-nav-link.nav-cta:active {
+.main-nav-link.nav-login:hover,
+.main-nav-link.nav-login:active {
   background-color: #c12e4d;
+}
+
+.icon-login {
+  height: 2.4rem;
+  width: 2.4rem;
 }
 
 /* MOBILE */
@@ -123,44 +132,11 @@
   margin-bottom: 4.8rem;
 }
 
-.delivered-meals {
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-  margin-top: 8rem;
-}
-
-.delivered-imgs {
-  display: flex;
-}
-
-.delivered-imgs img {
-  height: 4.8rem;
-  width: 4.8rem;
-  border-radius: 50%;
-  margin-right: -1.6rem;
-  border: 3px solid #fdf2e9;
-}
-
-.delivered-imgs img:last-child {
-  margin: 0;
-}
-
-.delivered-text {
-  font-size: 1.8rem;
-  font-weight: 600;
-}
-
-.delivered-text span {
-  color: #c12e4d;
-  font-weight: 700;
-}
-
 /* .hero-img-box {
 } */
 
 .hero-img {
-  width: 100%;
+  width: 95%;
 }
 
 /**************************************/
@@ -169,13 +145,6 @@
 
 .section-how {
   padding: 9.6rem 0;
-}
-
-.step-number {
-  font-size: 8.6rem;
-  font-weight: 600;
-  color: #ddd;
-  margin-bottom: 1.2rem;
 }
 
 .step-description {
