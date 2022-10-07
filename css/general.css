@@ -59,6 +59,7 @@ Paragraph default: 1.6
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 body {
@@ -66,7 +67,6 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
-  overflow-x: hidden;
 }
 
 /**************************************/
@@ -236,6 +236,10 @@ body {
 *:focus {
   outline: none;
   box-shadow: 0 0 0 0.8rem rgba(214, 51, 85, 0.5);
+}
+
+.hidden {
+  display: none;
 }
 
 /* SETTINGS CLASSES */

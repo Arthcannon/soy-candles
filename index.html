@@ -41,11 +41,16 @@
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="#how">About candles</a></li>
           <li>
-            <a class="main-nav-link" href="#">Products</a>
+            <a class="main-nav-link" href="http://127.0.0.1:5500/products.html"
+              >Products</a
+            >
           </li>
           <li>
-            <a class="main-nav-link nav-login" href="#"
-              >Login<ion-icon name="accessibility" class="icon-login"></ion-icon
+            <a class="main-nav-link nav-login show-modal" href="#"
+              >Log in<ion-icon
+                name="accessibility"
+                class="icon-login"
+              ></ion-icon
             ></a>
           </li>
         </ul>
@@ -85,6 +90,43 @@
           </div>
         </div>
       </section>
+
+      <div class="modal-window hidden">
+        <img
+          src="/img/samuel-bryngelsson-6gAjVCOvJZw-unsplash.jpg"
+          alt="Image of soy candle in the dark"
+          class="modal-img"
+        />
+        <!-- <button class="close-modal">&times;</button> -->
+        <div class="modal-text-box">
+          <h2 class="heading-secondary modal-heading">Welcome!</h2>
+          <form class="login-form" name="login">
+            <div>
+              <label for="email">Email address</label>
+              <input
+                name="email"
+                id="email"
+                type="email"
+                placeholder="me@example.com"
+                required
+              />
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input
+                name="password"
+                id="password"
+                type="password"
+                placeholder="****"
+                required
+              />
+            </div>
+            <button class="btn btn-login">Log in</button>
+          </form>
+          <button class="btn-signup">Sign up</button>
+        </div>
+      </div>
+      <div class="overlay hidden"></div>
       <section class="section-how" id="how">
         <div class="container">
           <span class="subheading">About candles</span>

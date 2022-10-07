@@ -69,6 +69,41 @@ const obs = new IntersectionObserver(
 obs.observe(sectionHeroEl);
 
 ///////////////////////////////////////////////////////////
+// Modal window
+
+const modal = document.querySelector(".modal-window");
+const overlay = document.querySelector(".overlay");
+const btnCloseModal = document.querySelector(".close-modal");
+const btnsOpenModal = document.querySelectorAll(".show-modal");
+const body = document.body;
+
+const openModal = function () {
+  modal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+  body.classList.add("modal-open");
+};
+
+const closeModal = function () {
+  modal.classList.add("hidden");
+  overlay.classList.add("hidden");
+  body.classList.remove("modal-open");
+};
+
+for (let i = 0; i < btnsOpenModal.length; i++)
+  btnsOpenModal[i].addEventListener("click", openModal);
+
+// btnCloseModal.addEventListener("click", closeModal);
+overlay.addEventListener("click", closeModal);
+
+document.addEventListener("keydown", function (e) {
+  console.log(e.key);
+
+  if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+    closeModal();
+  }
+});
+
+///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
   var flex = document.createElement("div");
@@ -82,10 +117,13 @@ function checkFlexGap() {
   document.body.appendChild(flex);
   var isSupported = flex.scrollHeight === 1;
   flex.parentNode.removeChild(flex);
-  console.log(isSupported);
 
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
 checkFlexGap();
 
 // https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
+
+fetch("https://fakestoreapi.com/products/categories")
+  .then((res) => res.json())
+  .then((json) => console.log(json));
