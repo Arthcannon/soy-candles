@@ -16,7 +16,7 @@ btnNavEl.addEventListener("click", function () {
 });
 
 ///////////////////////////////////////////////////////////
-//Smooth scrolling animation
+// Smooth scrolling animation
 
 const allLinks = document.querySelectorAll("a:link");
 
@@ -104,6 +104,12 @@ document.addEventListener("keydown", function (e) {
 });
 
 ///////////////////////////////////////////////////////////
+// Fake store API
+fetch("https://fakestoreapi.com/products/categories")
+  .then((res) => res.json())
+  .then((json) => console.log(json));
+
+///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
   var flex = document.createElement("div");
@@ -123,7 +129,3 @@ function checkFlexGap() {
 checkFlexGap();
 
 // https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
-
-fetch("https://fakestoreapi.com/products/categories")
-  .then((res) => res.json())
-  .then((json) => console.log(json));

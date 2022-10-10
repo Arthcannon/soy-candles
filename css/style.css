@@ -309,6 +309,48 @@
 }
 
 /**************************************/
+/* PRODUCTS SECTION */
+/**************************************/
+
+.section-candles {
+  padding: 9.6rem 0;
+}
+
+.candle {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.candle:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.candle-content {
+  padding: 4.8rem;
+  padding-top: 3.2rem;
+}
+
+.candle-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.candle-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #e67e22;
+}
+
+.candle-img {
+  width: 100%;
+}
+
+/**************************************/
 /* FOOTER */
 /**************************************/
 
