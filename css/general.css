@@ -196,6 +196,22 @@ body {
   color: #555;
 }
 
+.btn--cart:link,
+.btn--cart:visited {
+  display: flex;
+  align-items: flex-end;
+  gap: 1.6rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+  background-color: #fbebee;
+  color: #555;
+}
+
+.btn--cart:hover,
+.btn--cart:active {
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
 .link:link,
 .link:visited {
   display: inline-block;
